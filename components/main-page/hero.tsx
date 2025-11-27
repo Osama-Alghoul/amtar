@@ -32,15 +32,15 @@ export default function Hero() {
   ];
   return (
     <section
-      className="bg-cover overflow-hidden bg-center rounded-3xl m-5"
+      className="bg-cover overflow-hidden bg-center md:rounded-3xl rounded-none md:m-5 m-0"
       style={{ backgroundImage: "url('/main-page/hero.png')" }}
     >
       <Header />
       <div className="text-white pt-[285px] flex flex-col justify-center items-center gap-4 pb-28">
-        <h1 className="font-semibold text-7xl text-center">
+        <h1 className="font-semibold lg:text-7xl md:text-5xl text-3xl text-center">
           منصة أمــتار <br /> للشراء و الايجار و البيع
         </h1>
-        <p className="text-xl">
+        <p className="lg:text-xl md:text-lg text-base">
           ابحث وقارن بين أكثر من 15000+ عقار من بين 800+ كمبوند أو اعرض عقارك
           للبيع
         </p>

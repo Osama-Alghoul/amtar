@@ -61,17 +61,19 @@ export default function Discover() {
     },
   ];
   return (
-    <section className="max-w-[1250px] m-auto">
-      <SectionTitle
-        title="استكشف المشاريع لاكثر مشاهدة"
-        description="اكتشف كلّ ما هو جديد حول المشاريع لتحظى بأفضل فرص الاستثمار."
-        more
-      />
-      <div className="flex ovrerflow-x-scroll snap-x snap-mandatory gap-5">
+    <>
+      <section className="px-20">
+        <SectionTitle
+          title="استكشف المشاريع لاكثر مشاهدة"
+          description="اكتشف كلّ ما هو جديد حول المشاريع لتحظى بأفضل فرص الاستثمار."
+          more
+        />
+      </section>
+      <div className="flex overflow-x-scroll snap-x snap-mandatory gap-5">
         {mockData.map((card, index) => (
           <DiscoverCard key={index} {...card} />
         ))}
       </div>
-    </section>
+    </>
   );
 }

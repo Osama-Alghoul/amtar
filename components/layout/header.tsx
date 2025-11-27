@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 export default function Header() {
   const [showHeader, setShowHeader] = useState(false);
@@ -21,7 +22,13 @@ export default function Header() {
     <header
       className={`fixed top-5 left-0 right-0 z-50 py-6 px-10 transition-all duration-500 opacity-100 translate-y-0`}
     >
-      <div className={`flex justify-between items-center ${showHeader ?  "opacity-100 translate-y-0 bg-[#0F172A]/70 backdrop-blur-xl shadow-lg" : "bg-[#F8FAFC1F]"} backdrop-blur-md p-4 rounded-xl`}>
+      <div
+        className={`flex justify-between items-center ${
+          showHeader
+            ? "opacity-100 translate-y-0 bg-[#0F172A]/70 transition-all duration-500 backdrop-blur-xl shadow-lg"
+            : "bg-[#F8FAFC1F]"
+        } backdrop-blur-md p-4 rounded-xl`}
+      >
         <div className="size-10">
           <Image
             src={"/logo.png"}
@@ -44,9 +51,11 @@ export default function Header() {
         </ul>
 
         <div>
-          <Button className="rounded-full bg-white text-primary">
-            تسجيل / دخول
-          </Button>
+          <Link href={"/auth/login"}>
+            <Button className="rounded-full bg-white text-primary hover:text-white">
+              تسجيل / دخول
+            </Button>
+          </Link>
         </div>
       </div>
     </header>
