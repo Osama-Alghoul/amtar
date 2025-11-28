@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="bg-primary text-white lg:px-20 md:px-10 px-5 lg:py-10 md:py-5 py-1 flex flex-col lg:gap-12 md:gap-8 gap-5">
-      <div className="flex justify-between flex-wrap">
+      <div className="flex flex-col md:flex-row gap-10 justify-between flex-wrap">
         <div className="max-w-[400px]">
           <Image
             src={"/logo.png"}
@@ -18,7 +18,7 @@ export default function Footer() {
             وذلك عبر فريق من المتخصصين لضمان تجربة غنية بجودة وأمان.
           </strong>
         </div>
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3 hidden md:flex">
           <div className="font-medium">مناطق المملكة</div>
           <ul className="text-secoundary-muted [&_li:hover]:text-white [&_li:hover]:cursor-pointer flex flex-col gap-3">
             <li>منطقة الرياض</li>
@@ -31,14 +31,14 @@ export default function Footer() {
             <li>منطقة الجوف</li>
           </ul>
         </div>
-        <ul className="text-secoundary-muted [&_li:hover]:text-white [&_li:hover]:cursor-pointer flex flex-col gap-3">
+        <ul className="text-secoundary-muted [&_li:hover]:text-white [&_li:hover]:cursor-pointer flex-col gap-3 hidden md:flex">
           <li>منطقة تبوك</li>
           <li>منطقة حائل</li>
           <li>منطقة الحدود الشمالية</li>
           <li>منطقة جازان</li>
           <li>منطقة القصيم</li>
         </ul>
-        <div className="flex flex-col gap-3">
+        <div className="flex-col gap-3 flex">
           <div className="font-medium">مطورين</div>
           <ul className="text-secoundary-muted [&_li:hover]:text-white [&_li:hover]:cursor-pointer flex flex-col gap-3">
             <li>أوراسكوم مصر للتطوير العقاري</li>
