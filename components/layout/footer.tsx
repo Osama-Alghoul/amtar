@@ -18,7 +18,7 @@ export default function Footer() {
             وذلك عبر فريق من المتخصصين لضمان تجربة غنية بجودة وأمان.
           </strong>
         </div>
-        <div className="flex flex-col gap-3 hidden md:flex">
+        <div className="flex-col gap-3 hidden md:flex">
           <div className="font-medium">مناطق المملكة</div>
           <ul className="text-secoundary-muted [&_li:hover]:text-white [&_li:hover]:cursor-pointer flex flex-col gap-3">
             <li>منطقة الرياض</li>
