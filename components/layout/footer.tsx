@@ -18,7 +18,7 @@ export default function Footer() {
             وذلك عبر فريق من المتخصصين لضمان تجربة غنية بجودة وأمان.
           </strong>
         </div>
-        <div className="flex-col gap-3 hidden md:flex">
+        <div className="flex-col gap-3 flex">
           <div className="font-medium">مناطق المملكة</div>
           <ul className="text-secoundary-muted [&_li:hover]:text-white [&_li:hover]:cursor-pointer flex flex-col gap-3">
             <li>منطقة الرياض</li>
@@ -31,22 +31,13 @@ export default function Footer() {
             <li>منطقة الجوف</li>
           </ul>
         </div>
-        <ul className="text-secoundary-muted [&_li:hover]:text-white [&_li:hover]:cursor-pointer flex-col gap-3 hidden md:flex">
+        <ul className="text-secoundary-muted [&_li:hover]:text-white [&_li:hover]:cursor-pointer flex-col gap-3 flex">
           <li>منطقة تبوك</li>
           <li>منطقة حائل</li>
           <li>منطقة الحدود الشمالية</li>
           <li>منطقة جازان</li>
           <li>منطقة القصيم</li>
         </ul>
-        <div className="flex-col gap-3 flex">
-          <div className="font-medium">مطورين</div>
-          <ul className="text-secoundary-muted [&_li:hover]:text-white [&_li:hover]:cursor-pointer flex flex-col gap-3">
-            <li>أوراسكوم مصر للتطوير العقاري</li>
-            <li>الاسكان و التعمير العقاري</li>
-            <li>ستارلايت للتطوير العقاري</li>
-            <li>مراكز للتطوير العقاري</li>
-          </ul>
-        </div>
         <div className="flex flex-col gap-3">
           <div className="font-medium">روابط مهمة</div>
           <ul className="text-secoundary-muted [&_li:hover]:text-white [&_li:hover]:cursor-pointer flex flex-col gap-3">
@@ -56,7 +47,7 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <div className="flex justify-between">
+      <div className="flex flex-col md:flex-row items-center justify-between">
         <ul>
           <a href=""></a>
           <a href=""></a>
