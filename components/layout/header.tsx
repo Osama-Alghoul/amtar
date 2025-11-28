@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Button } from "../ui/button";
 import Link from "next/link";
+import { HeaderDropdownMenu } from "../ui/HeaderMenu";
+
 
 export default function Header() {
   const [showHeader, setShowHeader] = useState(false);
@@ -20,7 +22,7 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-5 left-0 right-0 z-50 py-6 px-10 transition-all duration-500 opacity-100 translate-y-0`}
+      className={`fixed top-5 left-0 right-0 z-50 py-3 px-5 md:py-6 md:px-10 transition-all duration-500 opacity-100 translate-y-0`}
     >
       <div
         className={`flex justify-between items-center ${
@@ -29,7 +31,7 @@ export default function Header() {
             : "bg-[#F8FAFC1F]"
         } backdrop-blur-md p-4 rounded-xl`}
       >
-        <div className="size-10">
+        <Link href={"/"} className="size-10">
           <Image
             src={"/logo.png"}
             width={100}
@@ -37,9 +39,9 @@ export default function Header() {
             alt="logo"
             className="rounded-lg"
           />
-        </div>
+        </Link>
 
-        <ul className="flex text-white justify-center items-center gap-6">
+        <ul className="text-white justify-center items-center gap-6 hidden lg:flex">
           <li>الرئيسية</li>
           <li>بحث</li>
           <li>العقارات</li>
@@ -51,11 +53,12 @@ export default function Header() {
         </ul>
 
         <div>
-          <Link href={"/auth/login"}>
+          <Link href={"/auth/login"} className="hidden lg:block">
             <Button className="rounded-full bg-white text-primary hover:text-white">
               تسجيل / دخول
             </Button>
           </Link>
+          <HeaderDropdownMenu />
         </div>
       </div>
     </header>
