@@ -50,7 +50,7 @@ export default function MainPageSearch() {
           <Button className="rounded-full bg-primary-muted text-primary hover:text-white">
             <Filter />
           </Button>
-          <Button className="flex px-5 rounded-full items-center w-20 bg-primary-muted text-primary hover:text-white">
+          <Button className="flex px-5 rounded-full md:flex-none flex-1 items-center w-[200px] bg-primary-muted text-primary hover:text-white">
             <Search />
               بحث
           </Button>
