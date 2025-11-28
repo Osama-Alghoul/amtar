@@ -4,7 +4,7 @@ import MainPageSearch from "./mainPageSearch";
 export default function Search() {
   return (
     <section
-      className="bg-center bg-cover px-20"
+      className="bg-center bg-cover lg:px-20 md:px-10 px-5"
       style={{ backgroundImage: "url('/main-page/search.png')" }}
     >
       <div className="py-24">
