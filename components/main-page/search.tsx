@@ -13,6 +13,7 @@ export default function Search() {
           description="ابحث بسهولة عن الوحدات والمشاريع المثالية لك، مع ترشيحات دقيقة ومعلومات موثوقة."
           centred
         />
+        <br />
         <MainPageSearch />
       </div>
     </section>

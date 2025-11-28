@@ -38,7 +38,7 @@ export function DiscoverCard({
         <p className="text-sm opacity-80">أسعار تبدأ من</p>
         <p className="text-xl font-bold flex items-center gap-1">
           {price}
-          <span className="text-2xl">⃁</span>
+          <span className="text-2xl"><Image src="/icons/ryal.svg" width={20} height={20} alt="logo" /></span>
         </p>
       </div>
 

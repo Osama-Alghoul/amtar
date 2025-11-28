@@ -12,7 +12,7 @@ export default function HeroCard({
   className
 }: HeroCardProps) {
   return (
-    <div className={`flex items-center rounded-2xl p-3 gap-2 bg-[#F8FAFC1F] backdrop-blur-md ${className}`}>
+    <div className={`flex items-center rounded-2xl p-3 gap-2 bg-[#F8FAFC1F] backdrop-blur-md min-w-[340px] md:min-w-[400px] flex-1 ${className}`}>
       <div className="size-28 shrink-0">
         <Image src={src} className="size-28" alt={title} width={300} height={300} />
       </div>

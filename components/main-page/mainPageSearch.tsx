@@ -1,32 +1,23 @@
 import { Filter, Search } from "lucide-react";
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
-import {
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectLabel,
-  SelectTrigger,
-  SelectValue,
-} from "../ui/select";
 
 export default function MainPageSearch() {
   return (
     <div className="flex flex-col gap-6 justify-center items-center bg-[#FFFFFF80] p-4 rounded-2xl">
       <div className="flex justify-center w-full">
         <Button className="rounded-full flex-1">بحث عن وحدة</Button>
-        <Button variant={"link"} className="flex-1">
+        <Button variant={"ghost"} className="flex-1 rounded-full shadow-sm bg-white">
           بحث عن مشروع
         </Button>
       </div>
-      <div className="flex flex-col md:flex-row gap-4">
+      <div className="flex flex-col md:flex-row gap-4 w-full md:w-1/2">
         {/* <Input
           placeholder="رقم الوحدة"
           type="number"
           className="rounded-full"
         /> */}
-        <Input placeholder="اسم الوحدة" className="rounded-full" />
+        <Input placeholder="اسم الوحدة" className="rounded-full w-full" />
         {/* <Select>
           <SelectTrigger className="w-full rounded-full">
             <SelectValue placeholder="اختر المدينة" />

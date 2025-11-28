@@ -14,7 +14,7 @@ export default function SectionTitle({
   return (
     <div
       className={`flex items-center shrink-0 md:shrink flex-wrap ${
-        more ? "justify-between" : "justify-center"
+        more ? "md:justify-between justify-end" : "justify-center"
       }`}
     >
       <div className={`flex flex-col gap-3 ${centred ? "items-center" : ""}`}>
@@ -25,7 +25,7 @@ export default function SectionTitle({
       </div>
       <Activity mode={more ? "visible" : "hidden"}>
         <Link href={href || "/#"} className="pt-3 md:pt-0">
-          <Button className="bg-primary-muted text-primary text-xs md:text-base hover:text-white rounded-full">
+          <Button className="bg-primary-muted text-primary text-xs md:text-base hover:text-white rounded-full self-end">
             استكشف المزيد <ArrowUpLeft />
           </Button>
         </Link>{" "}
