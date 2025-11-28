@@ -11,8 +11,19 @@ import {
 
 export default function User() {
   return (
-    <div className="flex gap-1 items-center">
-      <PlusCircle className="text-white"/>
+    <div className="flex md:gap-2 gap-1 items-center">
+      <div className="md:flex gap-1 hidden">
+        <div className="p-2 bg-primary text-white rounded-full">
+          <Heart className="size-5" />
+        </div>
+        <div className="p-2 bg-primary text-white rounded-full">
+          <Bell className="size-5" />
+        </div>
+        <div className="p-2 bg-primary text-white rounded-full">
+          <MessageCircle className="size-5" />
+        </div>
+      </div>
+      <PlusCircle className="text-white" />
       <DropdownMenu dir="rtl">
         <DropdownMenuTrigger asChild>
           <div className="flex items-center gap-2">
