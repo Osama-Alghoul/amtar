@@ -5,4 +5,5 @@ export interface HeroCardProps {
   pool: number;
   area: number;
   src: string;
+  className?: string;
 }

@@ -24,8 +24,8 @@ export default function SectionTitle({
         <p className="text-muted-foreground">{description}</p>
       </div>
       <Activity mode={more ? "visible" : "hidden"}>
-        <Link href={href || "/#"}>
-          <Button className="bg-primary-muted text-primary hover:text-white rounded-full">
+        <Link href={href || "/#"} className="pt-3 md:pt-0">
+          <Button className="bg-primary-muted text-primary text-xs md:text-base hover:text-white rounded-full">
             استكشف المزيد <ArrowUpLeft />
           </Button>
         </Link>{" "}

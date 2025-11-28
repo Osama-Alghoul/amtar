@@ -40,13 +40,13 @@ export default function Hero() {
         <h1 className="font-semibold lg:text-7xl md:text-5xl text-3xl text-center">
           منصة أمــتار <br /> للشراء و الايجار و البيع
         </h1>
-        <p className="lg:text-xl md:text-lg text-base">
+        <p className="lg:text-xl md:text-lg text-base text-center">
           ابحث وقارن بين أكثر من 15000+ عقار من بين 800+ كمبوند أو اعرض عقارك
           للبيع
         </p>
       </div>
-      <div className="flex justify-center gap-5 px-20 pb-20">
-        {mockData.map((item) => (
+      <div className="flex justify-center gap-5 lg:px-20 md:px-10 px-5 pb-20">
+        {mockData.map((item, index) => (
           <HeroCard
             key={item.title}
             title={item.title}
@@ -55,6 +55,7 @@ export default function Hero() {
             pool={item.pool}
             area={item.area}
             src={item.src}
+            className={index > 0 ? "hidden lg:flex" : "flex"}
           />
         ))}
       </div>

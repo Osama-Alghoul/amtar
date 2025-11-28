@@ -2,9 +2,9 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { Button } from "../ui/button";
 import Link from "next/link";
 import { HeaderDropdownMenu } from "../ui/HeaderMenu";
+import User from "./user";
 
 
 export default function Header() {
@@ -22,7 +22,7 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-5 left-0 right-0 z-50 py-3 px-5 md:py-6 md:px-10 transition-all duration-500 opacity-100 translate-y-0`}
+      className={`fixed top-5 left-0 right-0 z-50 py-1 px-1 md:py-6 md:px-10 transition-all duration-500 opacity-100 translate-y-0`}
     >
       <div
         className={`flex justify-between items-center ${
@@ -52,12 +52,13 @@ export default function Header() {
           <li>تواصل معنا</li>
         </ul>
 
-        <div>
-          <Link href={"/auth/login"} className="hidden lg:block">
+        <div className="flex items-center gap-1">
+          {/* <Link href={"/auth/login"}>
             <Button className="rounded-full bg-white text-primary hover:text-white">
               تسجيل / دخول
             </Button>
-          </Link>
+          </Link> */}
+          <User />
           <HeaderDropdownMenu />
         </div>
       </div>

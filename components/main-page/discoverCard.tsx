@@ -12,13 +12,13 @@ export function DiscoverCard({
   logo,
 }: DiscoverCardProps) {
   return (
-    <Card className="relative w-[400px] overflow-hidden rounded-3xl border-0 p-0 shadow-xl max-w-sm snap-start shrink-0">
+    <Card className="relative w-[330px] md:w-[400px] h-[500px] overflow-hidden rounded-3xl border-0 p-0 shadow-xl max-w-sm snap-start shrink-0">
       <Image
         src={image}
         alt={title}
         height={1000}
         width={1000}
-        className="object-cover"
+        className="object-cover w-full h-full"
       />
       <div className="absolute inset-0 bg-linear-to-b from-black/20 via-black/50 to-black/80" />
 

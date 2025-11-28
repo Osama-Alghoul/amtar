@@ -5,19 +5,16 @@ import {
   DropdownMenuGroup,
   DropdownMenuItem,
   DropdownMenuLabel,
-  DropdownMenuSeparator,
   DropdownMenuShortcut,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { Menu, Search } from "lucide-react";
+import { Search, ChevronDown } from "lucide-react";
 
 export function HeaderDropdownMenu() {
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger asChild className="block lg:hidden">
-        <Button variant="outline">
-          <Menu />
-        </Button>
+      <DropdownMenuTrigger asChild className="p-0">
+        <ChevronDown className="size-7 text-white" />
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56" align="start">
         <DropdownMenuLabel>القائمة</DropdownMenuLabel>
@@ -35,9 +32,7 @@ export function HeaderDropdownMenu() {
         <DropdownMenuItem>وسطاء عقاريين</DropdownMenuItem>
         <DropdownMenuItem>اطلب عقارك</DropdownMenuItem>
         <DropdownMenuItem>من نحن</DropdownMenuItem>
-        <DropdownMenuItem>تواصل معنت</DropdownMenuItem>
-        <DropdownMenuSeparator />
-        <DropdownMenuItem>تسجيل الدخول</DropdownMenuItem>
+        <DropdownMenuItem>تواصل معنا</DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   );

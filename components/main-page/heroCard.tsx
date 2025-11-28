@@ -9,9 +9,10 @@ export default function HeroCard({
   pool,
   area,
   src,
+  className
 }: HeroCardProps) {
   return (
-    <div className="flex rounded-2xl p-3 gap-2 bg-[#F8FAFC1F] backdrop-blur-md">
+    <div className={`flex items-center rounded-2xl p-3 gap-2 bg-[#F8FAFC1F] backdrop-blur-md ${className}`}>
       <div className="size-28 shrink-0">
         <Image src={src} className="size-28" alt={title} width={300} height={300} />
       </div>
