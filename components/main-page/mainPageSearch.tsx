@@ -28,7 +28,7 @@ export default function MainPageSearch() {
         />
         <Input placeholder="اسم الوحدة" className="rounded-full" />
         <Select>
-          <SelectTrigger className="w-[180px] rounded-full">
+          <SelectTrigger className="w-full rounded-full">
             <SelectValue placeholder="اختر المدينة" />
           </SelectTrigger>
           <SelectContent>
@@ -43,7 +43,7 @@ export default function MainPageSearch() {
           </SelectContent>
         </Select>
         <Select>
-          <SelectTrigger className="w-[180px] rounded-full">
+          <SelectTrigger className="w-full rounded-full">
             <SelectValue placeholder="نوع الوحدة" />
           </SelectTrigger>
           <SelectContent>
@@ -59,7 +59,7 @@ export default function MainPageSearch() {
           <Button className="rounded-full bg-primary-muted text-primary hover:text-white">
             <Filter />
           </Button>
-          <div className="bg-primary-muted flex px-5 rounded-full items-center">
+          <div className="bg-primary-muted flex px-5 rounded-full items-center w-28">
             <Search />
             <Input
               placeholder="بحث"
