@@ -36,7 +36,7 @@ export default function Hero() {
       style={{ backgroundImage: "url('/main-page/hero.png')" }}
     >
       <Header />
-      <div className="text-white pt-[285px] flex flex-col justify-center items-center gap-4 pb-28">
+      <div className="text-white pt-[190px] flex flex-col justify-center items-center gap-4 pb-28">
         <h1 className="font-semibold lg:text-7xl md:text-5xl text-3xl text-center">
           منصة أمــتار <br /> للشراء و الايجار و البيع
         </h1>

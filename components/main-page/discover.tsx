@@ -9,6 +9,7 @@ export default function Discover() {
           title="استكشف المشاريع لاكثر مشاهدة"
           description="اكتشف كلّ ما هو جديد حول المشاريع لتحظى بأفضل فرص الاستثمار."
           more
+          href={'/projects'}
         />
       </section>
       <DiscoverSlides />

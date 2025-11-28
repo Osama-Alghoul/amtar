@@ -23,7 +23,7 @@ export default function User() {
           <MessageCircle className="size-5" />
         </div>
       </div>
-      <PlusCircle className="text-white" />
+      <PlusCircle className="text-white size-9" />
       <DropdownMenu dir="rtl">
         <DropdownMenuTrigger asChild>
           <div className="flex items-center gap-2">

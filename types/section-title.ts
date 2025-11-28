@@ -3,5 +3,5 @@ export interface SectionTitleProps {
   description: string;
   more?: boolean;
   centred?: boolean;
-  href?: URL;
+  href?: string;
 }

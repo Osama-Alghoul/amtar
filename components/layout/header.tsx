@@ -7,7 +7,7 @@ export default function Header() {
 
   return (
     <header
-      className={`top-5 left-0 right-0 z-50 py-1 px-1 md:py-6 md:px-10 transition-all duration-500 opacity-100 translate-y-0`}
+      className={`top-5 left-0 right-0 z-50 py-6 px-2 md:px-6 transition-all duration-500 opacity-100 translate-y-0`}
     >
       <div
         className={`flex justify-between items-center bg-[#F8FAFC1F]  backdrop-blur-md p-4 rounded-xl`}

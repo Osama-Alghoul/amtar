@@ -47,26 +47,72 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row items-center justify-between">
-        <ul>
-          <a href=""></a>
-          <a href=""></a>
-          <a href=""></a>
-          <a href=""></a>
-          <a href=""></a>
-          <a href=""></a>
+      <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+        <ul className="flex gap-6 items-center">
+          <a href="">
+            <Image src={"/footer/x.svg"} alt="تويتر" height={24} width={24} />
+          </a>
+          <a href="">
+            <Image
+              src={"/footer/tiktok.svg"}
+              alt="تيك توك"
+              height={24}
+              width={24}
+            />
+          </a>
+          <a href="">
+            <Image
+              src={"/footer/youtube.svg"}
+              alt="يوتيوب"
+              height={24}
+              width={24}
+            />
+          </a>
+          <a href="">
+            <Image
+              src={"/footer/insta.svg"}
+              alt="انستقرام"
+              height={24}
+              width={24}
+            />
+          </a>
+          <a href="">
+            <Image
+              src={"/footer/snap.svg"}
+              alt="سناب شات"
+              height={24}
+              width={24}
+            />
+          </a>
+          <a href="">
+            <Image src={"/footer/wa.svg"} alt="واتساب" height={24} width={24} />
+          </a>
         </ul>
         <div className="flex gap-6">
           <a href="https://mt.gov.sa/" target="_blank">
-            <Image src={'/footer/tourism.png'} alt="وزارة السياحة" height={100} width={100} className="w-36" />
+            <Image
+              src={"/footer/tourism.png"}
+              alt="وزارة السياحة"
+              height={100}
+              width={100}
+              className="w-36"
+            />
           </a>
           <a href="https://rega.gov.sa/" target="_blank">
-            <Image src={'/footer/fal.png'} alt="رخصة فال العقارية" height={100} width={100} className="w-36"/>
+            <Image
+              src={"/footer/fal.png"}
+              alt="رخصة فال العقارية"
+              height={100}
+              width={100}
+              className="w-36"
+            />
           </a>
         </div>
       </div>
       <hr />
-      <div className="text-center">جميع الحقوق محفوظة لمنصة أمتار العقارية © 2026</div>
+      <div className="text-center">
+        جميع الحقوق محفوظة لمنصة أمتار العقارية © 2026
+      </div>
     </footer>
   );
 }

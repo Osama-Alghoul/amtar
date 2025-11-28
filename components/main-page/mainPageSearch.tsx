@@ -21,13 +21,13 @@ export default function MainPageSearch() {
         </Button>
       </div>
       <div className="flex flex-col md:flex-row gap-4">
-        <Input
+        {/* <Input
           placeholder="رقم الوحدة"
           type="number"
           className="rounded-full"
-        />
+        /> */}
         <Input placeholder="اسم الوحدة" className="rounded-full" />
-        <Select>
+        {/* <Select>
           <SelectTrigger className="w-full rounded-full">
             <SelectValue placeholder="اختر المدينة" />
           </SelectTrigger>
@@ -54,18 +54,15 @@ export default function MainPageSearch() {
               <SelectItem value="blueberry">بيت</SelectItem>
             </SelectGroup>
           </SelectContent>
-        </Select>
+        </Select> */}
         <div className="flex gap-4">
           <Button className="rounded-full bg-primary-muted text-primary hover:text-white">
             <Filter />
           </Button>
-          <div className="bg-primary-muted flex px-5 rounded-full items-center w-28">
+          <Button className="flex px-5 rounded-full items-center w-20 bg-primary-muted text-primary hover:text-white">
             <Search />
-            <Input
-              placeholder="بحث"
-              className="border-none stroke-0 shadow-none focus-visible:ring-0 focus-visible:ring-offset-0"
-            />
-          </div>
+              بحث
+          </Button>
         </div>
       </div>
     </div>
